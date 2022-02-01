@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="window">
+            <div class="operation">0</div>
+            <div class="answer">0</div>
+        </div>
+        <div class="buttons">
+            <div class="topSide">
+                <div class="leftSide">
+                    <button class="number" id="7" data-key="55" data-key2="103" onclick="addNumber(7);doCalcs()">7
+                        <div class="text">key: "7"</div>
+                    </button>
+                    <button class="number" id="8" data-key="56" data-key2="104" onclick="addNumber(8);doCalcs()">8
+                        <div class="text">key: "8"</div>
+                    </button>
+                    <button class="number" id="9" data-key="57" data-key2="105" onclick="addNumber(9);doCalcs()">9
+                        <div class="text">key: "9"</div>
+                    </button>
+                    <button class="number" id="4" data-key="52" data-key2="100" onclick="addNumber(4);doCalcs()">4
+                        <div class="text">key: "4"</div>
+                    </button>
+                    <button class="number" id="5" data-key="53" data-key2="101" onclick="addNumber(5);doCalcs()">5
+                        <div class="text">key: "5"</div>
+                    </button>
+                    <button class="number" id="6" data-key="54" data-key2="102" onclick="addNumber(6);doCalcs()">6
+                        <div class="text">key: "6"</div>
+                    </button>
+                    <button class="number" id="1" data-key="49" data-key2="97" onclick="addNumber(1);doCalcs()">1
+                        <div class="text">key: "1"</div>
+                    </button>
+                    <button class="number" id="2" data-key="50" data-key2="98" onclick="addNumber(2);doCalcs()">2
+                        <div class="text">key: "2"</div>
+                    </button>
+                    <button class="number" id="3" data-key="51" data-key2="99" onclick="addNumber(3);doCalcs()">3
+                        <div class="text">key: "3"</div>
+                    </button>
+                    <button class="symbol" id="." data-key="190" data-key2="110" onclick="addPoint('.')">.
+                        <div class="text">key: "."</div>
+                    </button>
+                    <button class="number" id="0" data-key="48" data-key2="96" onclick="addCero(0);doCalcs()">0
+                        <div class="text">key: "0"</div>
+                    </button>
+                    <button class="operator" id="e" data-key="8" onclick="erase()">Del
+                        <div class="text">key: "␈"</div>
+                    </button>
+                </div>
+                <div class="rightSide">
+                    <button class="symbol" id="plus" data-key="187" data-key2="107" onclick="addSymbol('+')">+
+                        <div class="text">key: "+"</div>
+                    </button>
+                    <button class="symbol" id="minus" data-key="189" data-key2="109" onclick="addSymbol('-')">-
+                        <div class="text">key: "-"</div>
+                    </button>
+                    <button class="symbol" id="multiply" data-key="88" data-key2="106" onclick="addSymbol('x')">x
+                        <div class="text">key: "*,x"</div>
+                    </button>
+                    <button class="symbol" id="divide" data-key="111" data-key2="68" onclick="addSymbol('/')">/
+                        <div class="text">key: "/,d"</div>
+                    </button>
+                </div>
+    
+            </div>
+            <div class="lowerSide">
+                <button class="operator" id="ea" data-key="27" data-key2="46" onclick="eraseAll()">AC
+                    <div class="text">key: "esc,supr"</div>
+                </button>
+                <button class="operator" id="enter" data-key="13" onclick="enter()">=
+                    <div class="text">key: "enter"</div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

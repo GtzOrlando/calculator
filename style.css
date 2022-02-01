@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.calculator {
+    width: 400px;
+    height: 600px;
+    background-color: rgb(230, 227, 227);
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.window {
+    border: 1px solid grey;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: end;
+    background-color: white;
+}
+
+
+.operation {
+    color: grey;
+    height: 152px;
+    width: 374px;
+    flex-wrap: wrap;
+
+}
+
+.answer {
+    color: black;
+}
+
+.topSide {
+    display: flex;
+}
+
+.rightSide {
+    margin-left: 3px;
+    margin-right: 0px;
+}
+
+.buttons {
+    margin: 0px 8px;
+}
+
+button {
+    width: 91px;
+    height: 70px;
+    margin: 2px 0px;
+    background-color: rgb(173, 173, 173);
+}
+
+#ea, #enter {
+    width: 187px;
+    background-color: rgb(192, 148, 66);
+}
+
+#plus, #minus, #multiply, #divide {
+    background-color: rgb(71, 151, 71);
+}
+
+.number, .symbol, .operator {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 12px;
+    font-weight: normal;
+    color: white;
+}
