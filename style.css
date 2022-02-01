@@ -7,7 +7,7 @@ body {
 .calculator {
     width: 400px;
     height: 600px;
-    background-color: rgb(230, 227, 227);
+    background-color: black;
     border: 2px solid grey;
     border-radius: 10px;
 }
@@ -27,8 +27,7 @@ body {
     color: grey;
     height: 152px;
     width: 374px;
-    flex-wrap: wrap;
-
+    overflow-wrap: break-word;
 }
 
 .answer {
@@ -52,7 +51,12 @@ button {
     width: 91px;
     height: 70px;
     margin: 2px 0px;
+    border-radius: 10px;
     background-color: rgb(173, 173, 173);
+}
+
+#e {
+    background-color: rgb(158, 76, 76);
 }
 
 #ea, #enter {

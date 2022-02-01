@@ -47,6 +47,10 @@ function addCero(a) {
             display = value.join('');
             operation.textContent = display; 
         }
+    } else if (value[0] > 0) {
+        value.push(a);
+        display = value.join('');
+        operation.textContent = display; 
     }
 }
 
